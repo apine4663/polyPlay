@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid purple;
+}
+.header__logo {
+  height: 100px;
+  object-fit: contain;
+  width: 120px;
+}
+.header__icon {
+  padding: 20px;
+}

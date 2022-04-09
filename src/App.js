@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./Header";
+import "./App.css";
+import TinderCards from "./TinderCards";
+import SwipeButtons from "./SwipeButtons";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>PolyPlay begins</h1>
+      <Header />
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <TinderCards /> <SwipeButtons />
+              </>
+            }
+          />
+
+          <Route path="/chat" element={<h1>I am chat</h1>} />
+          <Route path="/homepage" element={<h1>I am a home</h1>} />
+        </Routes>
+        {/* Header */}
+        {/* Profile cards */}
+        {/* Feature buttons */}
+
+        {/* Chat Screen */}
+        {/* Dm screen */}
+      </Router>
     </div>
   );
 }
