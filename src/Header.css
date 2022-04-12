@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid purple;
+  background-color: rgb(245, 196, 245);
 }
 .header__logo {
   height: 100px;

@@ -4,10 +4,10 @@
   padding: 20px;
   max-width: 85vw;
   height: 50vh;
-  border-radius: 20px;
+  border-radius: 50px;
   background-size: cover;
   background-position: center;
-  box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 18px 53px 0px rgba(54, 236, 18, 0.3);
 }
 .tinderCards__cardContainer {
   display: flex;
